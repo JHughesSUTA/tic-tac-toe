@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --dark-navy: #1A2A33;
+  --semi-dark-navy: #1F3641;
+  --silver: #A8BFC9;
+  --hover-silver: #DBE8ED;
+  --light-blue: #31C3BD;
+  --hover-light-blue: #65E9E4;
+  --light-yellow: #F2B137;
+  --hover-light-yellow: #FFC860;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
 }
