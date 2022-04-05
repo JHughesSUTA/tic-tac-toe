@@ -1,9 +1,12 @@
 import './App.css';
+import NewGame from './components/NewGame';
 
 const App = () => {
   return (
     <div className="App">
-      <p>Hello World</p>
+      <div className="container">
+        <NewGame />
+      </div>
     </div>
   );
 }
