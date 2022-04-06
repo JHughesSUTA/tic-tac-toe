@@ -46,7 +46,7 @@ body {
   margin: 0 auto;
 }
 
-.new-game__pick {
+.new-game__module {
   background-color: var(--semi-dark-navy);
   padding: 1.5em;
   margin: 2em 0;
@@ -56,38 +56,43 @@ body {
   box-shadow: 0px 11px 0px 0px var(--shadow-navy);
 }
 
-.new-game__pick p {
+.new-game__module {
   font-size: .875rem;
   opacity: .6;
 }
 
-.new-game__pick__selector {
+.new-game__selector {
   background-color: var(--dark-navy);
   margin: 1em 0;
   border-radius: 15px;
   display: flex;
 }
 
-.new-game__pick__selector__button {
+.module__select-button {
   background-color: var(--dark-navy);
   border: none;
   flex: 1;
+  border-radius: 15px;
+  margin: .8em;
+  padding: 1em 0;
+  cursor: pointer;
 }
 
-.new-game__pick__selector__button--active {
+.module__select-button--active {
   background-color: var(--silver);
   border: none;
   flex: 1;
   border-radius: 15px;
   margin: .8em;
   padding: 1em 0;
+  cursor: pointer;
 }
 
-.new-game__pick__selector__button .icon-o path {
+.module__select-button .icon path {
   fill: var(--silver);
 }
 
-.new-game__pick__selector__button--active .icon-x path {
+.module__select-button--active .icon path {
   fill: var(--dark-navy);
 }
 
@@ -106,10 +111,20 @@ body {
   background-color: var(--light-yellow);
   -webkit-box-shadow: 0px 10px 0px 0px var(--shadow-yellow); 
   box-shadow: 0px 10px 0px 0px var(--shadow-yellow);
+  cursor: pointer;
+}
+
+.btn--yellow:hover {
+  background-color: var(--hover-light-yellow);
 }
 
 .btn--blue {
   background-color: var(--light-blue);
   -webkit-box-shadow: 0px 10px 0px 0px var(--shadow-blue); 
   box-shadow: 0px 10px 0px 0px var(--shadow-blue);
+  cursor: pointer;
+}
+
+.btn--blue:hover {
+  background-color: var(--hover-light-blue);
 }

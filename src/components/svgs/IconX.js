@@ -3,7 +3,7 @@ import React from "react";
 const IconX = () => {
   return (
     <svg
-      className="icon-x"
+      className="icon-x icon"
       width="64"
       height="64"
       xmlns="http://www.w3.org/2000/svg"
