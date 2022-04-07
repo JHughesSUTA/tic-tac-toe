@@ -41,14 +41,14 @@ body {
   color: var(--silver);
 }
 
-.new-game .logo {
+.logo {
   display: block;
   margin: 0 auto;
 }
 
 .new-game__module {
   background-color: var(--semi-dark-navy);
-  padding: 1.5em;
+  padding: 1.5em 1.5em;
   margin: 2em 0;
   border-radius: 15px;
   text-align: center;
@@ -56,14 +56,10 @@ body {
   box-shadow: 0px 11px 0px 0px var(--shadow-navy);
 }
 
-.new-game__module {
-  font-size: .875rem;
-  opacity: .6;
-}
-
 .new-game__selector {
   background-color: var(--dark-navy);
-  margin: 1em 0;
+  margin: 1.35em 0;
+  padding: .65em;
   border-radius: 15px;
   display: flex;
 }
@@ -73,30 +69,35 @@ body {
   border: none;
   flex: 1;
   border-radius: 15px;
-  margin: .8em;
+  margin: 0 0;
   padding: 1em 0;
   cursor: pointer;
+}
+
+.module__select-button:hover {
+  background-color: var(--semi-dark-navy);
 }
 
 .module__select-button--active {
   background-color: var(--silver);
-  border: none;
-  flex: 1;
-  border-radius: 15px;
-  margin: .8em;
-  padding: 1em 0;
-  cursor: pointer;
 }
 
-.module__select-button .icon path {
+.module__select-button--active:hover {
+  background-color: var(--hover-silver);
+}
+.new-game__button-container {
+  margin-top: 3em;
+}
+
+.icon-path {
   fill: var(--silver);
 }
 
-.module__select-button--active .icon path {
+.icon-path--active {
   fill: var(--dark-navy);
 }
 
-.new-game .btn {
+.new-game__type {
   display: block;
   width: 100%;
   padding: 1em 0;
@@ -104,18 +105,26 @@ body {
   border-radius: 15px;
   font-size: 1rem;
   font-weight: bold;
+  letter-spacing: .15rem;
+}
+
+.new-game__type:last-of-type {
   margin-top: 2em;
 }
 
 .btn--yellow {
   background-color: var(--light-yellow);
-  -webkit-box-shadow: 0px 10px 0px 0px var(--shadow-yellow); 
+  -webkit-box-shadow: 0px 10px 0px 0px var(--shadow-yellow);
   box-shadow: 0px 10px 0px 0px var(--shadow-yellow);
   cursor: pointer;
+  transition-duration: .25s;
 }
 
 .btn--yellow:hover {
   background-color: var(--hover-light-yellow);
+  transform: translate(10px, -3px);
+  -webkit-box-shadow: -15px 16px 0px 0px var(--shadow-yellow);
+  box-shadow: -15px 16px 0px 0px var(--shadow-yellow);
 }
 
 .btn--blue {
@@ -123,8 +132,17 @@ body {
   -webkit-box-shadow: 0px 10px 0px 0px var(--shadow-blue); 
   box-shadow: 0px 10px 0px 0px var(--shadow-blue);
   cursor: pointer;
+  transition-duration: .25s;
 }
 
 .btn--blue:hover {
   background-color: var(--hover-light-blue);
+  transform: translate(10px, -3px);
+  -webkit-box-shadow: -15px 16px 0px 0px var(--shadow-blue);
+  box-shadow: -15px 16px 0px 0px var(--shadow-blue);
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
 }
