@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Logo from "../components/svgs/Logo";
-import Button from "./Button";
-import IconO from "../components/svgs/IconO";
-import IconX from "../components/svgs/IconX";
+import Logo from "../svgs/Logo";
+import Button from "../Button";
+import IconO from "../svgs/IconO";
+import IconX from "../svgs/IconX";
 
-const NewGame = () => {
+const NewGameScreen = () => {
   const [playerOneMark, setPlayerOneMark] = useState("O");
 
   const handleClick = (mark) => {
@@ -22,17 +22,19 @@ const NewGame = () => {
             className={`module__select-button ${
               playerOneMark === "X" && "module__select-button--active"
             }`}
+            data-testid="choice_x"
             onClick={() => handleClick("X")}
           >
-            <IconX active={ playerOneMark === 'X' ? true : false } />
+            <IconX active={playerOneMark === "X" ? true : false} />
           </button>
           <button
             className={`module__select-button ${
               playerOneMark === "O" && "module__select-button--active"
             }`}
+            data-testid="choice_o"
             onClick={() => handleClick("O")}
           >
-            <IconO active={ playerOneMark === 'O' ? true : false } />
+            <IconO active={playerOneMark === "O" ? true : false} />
           </button>
         </div>
         <p>REMEMBER : X GOES FIRST</p>
@@ -51,4 +53,4 @@ const NewGame = () => {
   );
 };
 
-export default NewGame;
+export default NewGameScreen;

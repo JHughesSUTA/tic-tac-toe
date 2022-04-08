@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 327px;
   margin: 0 auto;
   min-width: 300px;
 }
@@ -58,7 +58,9 @@ body {
 
 .new-game__selector {
   background-color: var(--dark-navy);
-  margin: 1.35em 0;
+  width: 280px;
+  margin: 1.34em auto;
+  /* margin: 1.35em 0; */
   padding: .65em;
   border-radius: 15px;
   display: flex;
