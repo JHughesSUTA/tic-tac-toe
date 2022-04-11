@@ -6,8 +6,8 @@ const App = () => {
   return (
     <div className="App">
       <div className="container">
-        <NewGameScreen />
-        {/* <Board /> */}
+        {/* <NewGameScreen /> */}
+        <Board />
       </div>
     </div>
   );
