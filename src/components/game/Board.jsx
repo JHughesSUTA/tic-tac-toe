@@ -2,24 +2,15 @@ import './Board.css'
 import Square from './Square'
 import { useState } from 'react'
 
-const Board = () => {
-  const [turn, setTurn] = useState('X')
-
-  const toggleTurn = () => {
-    setTurn(turn === 'X' ? 'O' : 'X')
-  }
+const Board = ({squares, handleClick, turn}) => {
 
   return (
     <div className="board">
-      <Square turn={turn} toggleTurn={toggleTurn} />
-      <Square turn={turn} toggleTurn={toggleTurn} />
-      <Square turn={turn} toggleTurn={toggleTurn} />
-      <Square turn={turn} toggleTurn={toggleTurn} />
-      <Square turn={turn} toggleTurn={toggleTurn} />
-      <Square turn={turn} toggleTurn={toggleTurn} />
-      <Square turn={turn} toggleTurn={toggleTurn} />
-      <Square turn={turn} toggleTurn={toggleTurn} />
-      <Square turn={turn} toggleTurn={toggleTurn} />
+      {
+        squares.map((square, i) => (
+          <Square key={i} turn={turn} handleClick={() => handleClick(i)} />
+        ))
+      }
     </div>
   )
 }
