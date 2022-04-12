@@ -8,7 +8,7 @@ const Board = ({squares, handleClick, turn}) => {
     <div className="board">
       {
         squares.map((square, i) => (
-          <Square key={i} value={square} turn={turn} handleClick={() => handleClick(i)} />
+          <Square key={i} value={square} handleClick={() => handleClick(i)} />
         ))
       }
     </div>

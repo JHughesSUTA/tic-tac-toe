@@ -17,9 +17,7 @@ const Game = () => {
 
   const handleClick = i => {
     const boardCopy = [...board];
-    console.log(boardCopy[i])
-    if (boardCopy[i]) {
-      console.log('taken')
+    if (boardCopy[i] || gameWon) {
       return
     };
     boardCopy[i] = turn;
