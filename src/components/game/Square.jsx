@@ -1,17 +1,7 @@
-import { useState } from "react";
-
-const Square = ({ turn, handleClick }) => {
-  const [mark, setMark] = useState("");
-
-  const doThis = () => {
-    console.log(turn)
-    setMark(turn)
-    handleClick()
-  }
-
+const Square = ({  value, handleClick }) => {
   return (
-    <button className="board-btn" mark={mark} onClick={() => {doThis()}}>
-      {`value: ${mark}`}
+    <button className="board-btn" onClick={handleClick}>
+      {`value: ${value}`}
     </button>
   );
 };

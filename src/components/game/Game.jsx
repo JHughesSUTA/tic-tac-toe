@@ -17,6 +17,11 @@ const Game = () => {
 
   const handleClick = i => {
     const boardCopy = [...board];
+    console.log(boardCopy[i])
+    if (boardCopy[i]) {
+      console.log('taken')
+      return
+    };
     boardCopy[i] = turn;
     setBoard(boardCopy);
     setTurn(turn === "X" ? "O" : "X");
